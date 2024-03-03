@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@keyframes scroll {
+    100%{
+        transform: translateX(-1000vw);
+    }
+}
+@keyframes rotation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes car1 {
+    0%{
+        left:140vw
+    }
+    100%{
+        left:-10vw
+    }
+}
+@keyframes car2 {
+    0%{
+        left:113vw
+    }
+    100%{
+        left:-10vw
+    }
+}
+@keyframes car3 {
+    0%{
+        left:140vw
+    }
+    100%{
+        left:-10vw
+    }
+}
+@keyframes car4 {
+    0%{
+        left:113vw
+    }
+    100%{
+        left:-10vw
+    }
+}
+@keyframes car5 {
+    0%{
+        left:190vw
+    }
+    100%{
+        left:-10vw
+    }
+}
+@keyframes car6 {
+    0%{
+        left:131vw
+    }
+    100%{
+        left:-10vw
+    }
+}
+@keyframes car7 {
+    0%{
+        left:170vw
+    }
+    100%{
+        left:-10vw
+    }
+}
+@keyframes car8 {
+    0%{
+        left:210vw
+    }
+    100%{
+        left:-10vw
+    }
+}
+@keyframes blink {
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92.5vh;
+    background-color: rgb(212, 175, 212);
+    font-family: 'Ubuntu', sans-serif;    
+    color: rgb(212, 175, 212);
+    font-size: 4rem;
+
+}
+form{
+    background-color: rgb(47, 6, 51);
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 70px;
+}
+#user{
+    width: 45vw;
+    height: 4.5vh;
+    border-radius: 50px;
+    margin: 5%;
+    padding-left: 2%;
+    font-size: 1.5rem;
+    color: rgb(47, 6, 51);
+    background-color: rgb(212, 175, 212);
+}
+#user:hover{
+    outline: none;
+}
+#btn{
+    height:5vh;
+    width:10vw;
+    border-radius: 30px;
+    font-size: x-large;
+    background-color: rgb(212, 175, 212);
+}
+#pause{
+    display: none;
+}
+#play{
+    background-color: rgb(212, 175, 212);
+    height:6vh;
+    border-radius: 30%;
+    position:relative;
+    bottom: 0.5vh;
+}
+#road{
+    background-image: url("road.png");
+    background-repeat: repeat-y repeat-x;
+    background-size: contain;
+    width: 500vw;
+    height: 46vh;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: 2;
+}
+#city{
+    background-image: url("fullimg.png");
+    background-repeat: repeat-x;
+    background-size:100vw 63vh;
+    height: 92vh;
+    width: 2000vw;
+    z-index: 0;
+}
+#car{
+    background-image: url("myt.png");
+    background-repeat: no-repeat;
+    background-size: 250px 111px;
+    height: 111px;
+    width:250px;
+    z-index: 21;
+    position: absolute;
+    left:2%;
+    bottom:18%;
+}
+.otherCars{
+    background-image: url("opt.png");
+    background-repeat: no-repeat;
+    background-size: 248px 113px;
+    height: 113px;
+    width:248px;
+    position: absolute;
+    left:2%;
+    bottom:5%;
+    padding-left: 0;
+}
+#car1{
+    left:10%;
+    bottom: 35%;
+    z-index: 17;
+    animation: none;
+}
+#car2{
+    left:30%;
+    bottom:2%;
+    z-index: 20;
+    animation: none;
+}
+#car3{
+    left:40%;
+    bottom:18%;
+    z-index: 19;
+    animation: none;
+}
+#car4{
+    left:60%;
+    bottom:16%;
+    z-index: 18;
+    animation: car4 linear 4.92s infinite;
+}
+#car5{
+    left:60%;
+    bottom:2%;
+    z-index: 18;
+    animation: none;
+}
+#car6{
+    left:1%;
+    bottom:-17%;
+    z-index: 18;
+    animation: car6 linear 5.24s infinite;
+}
+#car7{
+    left:70%;
+    bottom:35%;
+    z-index: 18;
+    animation: none;
+}
+#car8{
+    left:60%;
+    bottom:22%;
+    z-index: 18;
+    animation: car8 linear 8.4s infinite;
+}
+.removeAnimation{
+    animation: none;
+}
+.wheels{
+    background-image: url(wheel.png);
+    background-repeat: no-repeat;
+    background-size: 4.2vw 8.4vh;
+    height:10vh;
+    width: 10vw;
+    z-index:5;
+    position: absolute;
+    bottom:26.6%;
+    display: none;
+}   
+#wheel1{
+    left:12.6%;
+    /* animation: rotation linear 0.7s infinite;
+    transform-origin: center center; */
+}
+#wheel2{
+    left:23.9%;
+    /* animation: rotation linear 0.7s infinite;
+    transform-origin: center center; */
+}
+.animate-background{
+    animation: scroll linear 60s infinite;
+}
+nav{
+    padding-right: 1vw;
+    padding-top: 1vh;
+    background-color: rgb(47, 6, 51);
+    height: 7.5vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(212, 175, 212);    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+.menu{
+    margin:0.5vw;
+    padding:.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 3vh;
+}
+.main{
+    background-color: rgb(132, 11, 143);
+    height: 92vh;
+}
+#name{
+    font-size: 7vh;
+    font-weight: 700;
+}
+#upKey{
+    position: absolute;
+    right:0vw;
+    bottom: 19vh;
+    height: 19vh;
+    width: 13vw;
+    background-color: rgba(132, 11, 143, 0.9);
+    border: 2px solid red;
+    z-index:100;
+}
+#upKey:hover{
+    background-color: rgba(234, 173, 240, 0.9);
+}
+#downKey{
+    position: absolute;
+    right:0vw;
+    bottom: 0vh;
+    height: 19vh;
+    width: 13vw;
+    background-color: rgba(132, 11, 143, 0.9);
+    border: 2px solid red;
+    z-index:100;
+}
+#downKey:hover{
+    background-color: rgba(234, 173, 240, 0.9);
+}
