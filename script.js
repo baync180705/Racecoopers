@@ -59,7 +59,7 @@
         },100);
         }
         score.style.animation = "none";
-
+        v=60;
     })
 
 //Pauing the game once an accident are detected. Basically here pause is an invisible button which gets clicked automatically upon an accident.
@@ -77,7 +77,6 @@
         score.style.animation = "blink linear 0.7s 8";
         PB.innerHTML = `PB : ${localStorage.getItem("PB")}`;
         move = 18;
-        v=60;
     })
 
 //Moving the car on pressing the selected keys or using the onscreen buttons
