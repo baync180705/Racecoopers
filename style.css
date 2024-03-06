@@ -141,7 +141,7 @@ form{
     bottom: 0.5vh;
 }
 #road{
-    background-image: url("../Racecoopers/Assets/road.png");
+    background-image: url("Assets/road.png");
     background-repeat: repeat-y repeat-x;
     background-size: contain;
     width: 500vw;
@@ -152,7 +152,7 @@ form{
     z-index: 2;
 }
 #city{
-    background-image: url("../Racecoopers/Assets/fullimg.png");
+    background-image: url("Assets/fullimg.png");
     background-repeat: repeat-x;
     background-size:100vw 63vh;
     height: 92vh;
@@ -160,7 +160,7 @@ form{
     z-index: 0;
 }
 #car{
-    background-image: url("../Racecoopers/Assets/myt.png");
+    background-image: url("Assets/myt.png");
     background-repeat: no-repeat;
     background-size: 250px 111px;
     height: 111px;
@@ -171,7 +171,7 @@ form{
     bottom:18%;
 }
 .otherCars{
-    background-image: url("../Racecoopers/Assets/opt.png");
+    background-image: url("Assets/opt.png");
     background-repeat: no-repeat;
     background-size: 248px 113px;
     height: 113px;

@@ -77,6 +77,7 @@
         score.style.animation = "blink linear 0.7s 8";
         PB.innerHTML = `PB : ${localStorage.getItem("PB")}`;
         move = 18;
+        v=60;
     })
 
 //Moving the car on pressing the selected keys or using the onscreen buttons
