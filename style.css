@@ -141,7 +141,7 @@ form{
     bottom: 0.5vh;
 }
 #road{
-    background-image: url("road.png");
+    background-image: url("../Racecoopers/Assets/road.png");
     background-repeat: repeat-y repeat-x;
     background-size: contain;
     width: 500vw;
@@ -152,7 +152,7 @@ form{
     z-index: 2;
 }
 #city{
-    background-image: url("fullimg.png");
+    background-image: url("../Racecoopers/Assets/fullimg.png");
     background-repeat: repeat-x;
     background-size:100vw 63vh;
     height: 92vh;
@@ -160,7 +160,7 @@ form{
     z-index: 0;
 }
 #car{
-    background-image: url("myt.png");
+    background-image: url("../Racecoopers/Assets/myt.png");
     background-repeat: no-repeat;
     background-size: 250px 111px;
     height: 111px;
@@ -171,7 +171,7 @@ form{
     bottom:18%;
 }
 .otherCars{
-    background-image: url("opt.png");
+    background-image: url("../Racecoopers/Assets/opt.png");
     background-repeat: no-repeat;
     background-size: 248px 113px;
     height: 113px;
@@ -231,27 +231,6 @@ form{
 }
 .removeAnimation{
     animation: none;
-}
-.wheels{
-    background-image: url(wheel.png);
-    background-repeat: no-repeat;
-    background-size: 4.2vw 8.4vh;
-    height:10vh;
-    width: 10vw;
-    z-index:5;
-    position: absolute;
-    bottom:26.6%;
-    display: none;
-}   
-#wheel1{
-    left:12.6%;
-    /* animation: rotation linear 0.7s infinite;
-    transform-origin: center center; */
-}
-#wheel2{
-    left:23.9%;
-    /* animation: rotation linear 0.7s infinite;
-    transform-origin: center center; */
 }
 .animate-background{
     animation: scroll linear 60s infinite;
